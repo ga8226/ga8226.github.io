@@ -1,3 +1,76 @@
-body{
-    font-family: 'LeeSeoyun';
+ul,li{list-style: none;}
+.container{
+  width: 1200px;
+  margin: 0 auto;
 }
+#kimgarim{
+  font-family: 'LeeSeoyun';
+  header{
+    h1{
+      img{
+         height:3rem;
+      }
+    }
+    
+  }
+  #about{
+    div.my-bg{
+      width: 54rem;
+      height: 54rem;
+      border: 1px solid black;
+      background-image: url(../assets/img/aboutimg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    button.aboutB{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    opacity: 1;
+    a{text-decoration: none; color: #0070BF;
+    &:before{
+      content: "";
+      position: absolute;
+      right: -10px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #0070BF;
+      opacity: 0.2;
+      transform-origin: center center;
+      transition: .3s;
+    }
+    &:after{
+      font-family: 'bootstrap-icons' !important;
+      content: "\F138";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
+    
+    }
+  }
+}
+}
+
+
+
+
+// .header.sub-header .logo .logo-img {
+//   background-image: url(/dist/assets/img/logo.svg)
+
+// }
+// .header.fixed .logo,.search-nav-open .header .logo {
+//   width: 132px;
+//   height: 20px
+// }
+
+// .header.fixed .fixed-wrap .logo .logo-img,.search-nav-open .header .fixed-wrap .logo .logo-img {
+//   background: url(/dist/assets/img/logo.svg);
+//   background-repeat: no-repeat;
+//   background-position: 0 0;
+//   background-size: cover
+// }
