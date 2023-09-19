@@ -14,13 +14,19 @@ ul,li{list-style: none;}
     
   }
   #about{
+    .aboutinner{
+        padding-top: 80px;
+    }
+    h2{
+        line-height: 1.5;
+    }
     div.my-bg{
       width: 54rem;
-      height: 54rem;
       border: 1px solid black;
       background-image: url(../assets/img/aboutimg.jpg);
       background-repeat: no-repeat;
       background-position: center;
+      background-size: cover;
     }
     button.aboutB{
     position: relative;
@@ -29,21 +35,23 @@ ul,li{list-style: none;}
     border-radius: 0;
     outline: none;
     opacity: 1;
-    a.abouta{text-decoration: none; color: #0070BF;
-      font-size: 22px;
-    &:before{
-      content: "";
-      position: absolute;
-      right: -10px;
-      display: block;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #0070BF;
-      opacity: 0.2;
-      transform-origin: center center;
-      transition: .3s;
-    }
+        a.abouta{text-decoration: none; color: #0070BF;
+        font-size: 22px;
+        &:before{
+        content: "";
+        position: absolute;
+        right: -10px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #0070BF;
+        opacity: 0.2;
+            &hover{
+             transform: scale(1.5);
+            transition: 0.5s;
+             }
+        }
     &:after{
       font-family: 'bootstrap-icons' !important;
       content: "\F138";
@@ -51,7 +59,6 @@ ul,li{list-style: none;}
       width: 20px;
       height: 20px;
     }
-
     }
   }
 }
