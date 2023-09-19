@@ -7,9 +7,45 @@
 
 @font-face {
     font-family: 'NS';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    src: url('../font/NanumSquareNeo-Variable.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;500;600;700;800;900&family=Montserrat:wght@100;300;400;600&family=Noto+Sans+KR:wght@200;300;500;600;700&display=swap');
+@font-face {
+    font-family: 'Noto100';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../font/NotoSansKR-Thin.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Noto300';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../font/NotoSansKR-Light.woff) format('woff2');
+    
+  }
+
+  @font-face {
+    font-family: 'Noto400';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/NotoSansKR-Regular.woff2) format('woff2');
+   
+  }
+
+  @font-face {
+    font-family: 'Noto500';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../font/NotoSansKR-Medium.woff2) format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Noto600';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../font/NotoSansKR-Bold.woff2) format('woff2');
+   
+  }

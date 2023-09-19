@@ -29,11 +29,12 @@ ul, li {
   outline: none;
   opacity: 1;
 }
-#kimgarim #about button.aboutB a {
+#kimgarim #about button.aboutB a.abouta {
   text-decoration: none;
   color: #0070BF;
+  font-size: 22px;
 }
-#kimgarim #about button.aboutB a:before {
+#kimgarim #about button.aboutB a.abouta:before {
   content: "";
   position: absolute;
   right: -10px;
@@ -46,7 +47,7 @@ ul, li {
   transform-origin: center center;
   transition: 0.3s;
 }
-#kimgarim #about button.aboutB a:after {
+#kimgarim #about button.aboutB a.abouta:after {
   font-family: "bootstrap-icons" !important;
   content: "\f138";
   display: inline-block;
