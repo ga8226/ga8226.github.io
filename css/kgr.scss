@@ -3,67 +3,191 @@ ul,li{list-style: none;}
   width: 1200px;
   margin: 0 auto;
 }
+.ft18{font-size: 18px;}
+.ft3{font-size: 3rem; font-weight: 600;}
 #kimgarim{
   font-family: 'LeeSeoyun';
-  header{
-    h1{
-      img{
-         height:3rem;
+    header{
+      h1{
+        padding: 10px;
+        img{
+          height:3rem;
+        }
+      }
+   }
+   #about{
+        .aboutinner{
+            padding-top: 80px;
+        }
+        h2{
+            line-height: 1.5;
+        }
+        h4{
+          line-height: 2;
+        }
+        div.my-bg{
+          width: 54rem;
+          border: 1px solid black;
+          background-image: url(../assets/img/aboutimg.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        button.aboutB{
+        position: relative;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        opacity: 1;
+            a.abouta{text-decoration: none; color: #0070BF;
+            font-size: 22px;
+            &:before{
+            content: "";
+            position: absolute;
+            right: -10px;
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #0070BF;
+            opacity: 0.2;
+                &hover{
+                transform: scale(1.5);
+                transition: 0.5s;
+                }
+            }
+        &:after{
+          font-family: 'bootstrap-icons' !important;
+          content: "\F138";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+        }
+        }
       }
     }
+
+    #portfoliointro{
+      .pt-wrap{
+        padding: 30px 0;
+      }
+      div.back{
+        width: 951px;
+        height: 536px;
+        background-image: url(../assets/img/iwellback.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+    div.back2{
+      width: 951px;
+      height: 536px;
+      background-image: url(../assets/img/reactback.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    .circle {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .circle img {
+      vertical-align: middle; 
+  }
+
+  button.ptB{
+    border: none;
+    background-color: transparent;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+  }
+
+  
+  footer{
+      h2{line-height: 1.5;}
+      p{font-size: 1.3rem;}
+      button.ftB{
+        border: none;
+        background-color: transparent;
+        a{
+          text-decoration: none;
+          color: black;
+          font-size: 1.3rem;
+        }
+      }
+     
     
   }
-  #about{
-    .aboutinner{
-        padding-top: 80px;
-    }
-    h2{
-        line-height: 1.5;
-    }
-    div.my-bg{
-      width: 54rem;
-      border: 1px solid black;
-      background-image: url(../assets/img/aboutimg.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
-    button.aboutB{
-    position: relative;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
-    outline: none;
-    opacity: 1;
-        a.abouta{text-decoration: none; color: #0070BF;
-        font-size: 22px;
-        &:before{
-        content: "";
-        position: absolute;
-        right: -10px;
-        display: block;
-        width: 50px;
-        height: 50px;
+  .bubbles {
+    position:absolute;
+    top: 0;
+    z-index: -9999;
+    display: flex;
+    justify-content: space-around;
+    
+    span {
+        overflow: hidden;
+        // position: absolute;
+        width: 7vw;
+        height: 7vw;
+        // margin: 0 4px;
         border-radius: 50%;
-        background-color: #0070BF;
-        opacity: 0.2;
-            &hover{
-             transform: scale(1.5);
-            transition: 0.5s;
-             }
+        // opacity: 0.6;
+        animation: bubbelUp 15s linear infinite;
+        
+        &.purple {
+            background-color: #D9D7F1;
         }
-    &:after{
-      font-family: 'bootstrap-icons' !important;
-      content: "\F138";
-      display: inline-block;
-      width: 20px;
-      height: 20px;
+        &.yellow {
+            background-color: #FFFDDE;
+        }
+        &.green {
+            background-color: #E7FBBE;
+        }
+        &.pink {
+            background-color: #FFCBCB;
+        }
+        &.blue {
+            background-color: #D6E5FA;
+        }
+        &.b1 {
+            animation-duration: calc(30s/1);
+        }
+        &.b2 {
+            animation-duration: calc(40s/2);
+        }
+        &.b3 {
+            animation-duration: calc(30s/3);
+        }
+        &.b4 {
+            animation-duration: calc(30s/4);
+        }
+        &.b5 {
+            animation-duration: calc(40s/5);
+        }
     }
+
+    @keyframes bubbelUp {
+        0% {
+            opacity: 0.3;
+            transform: translateY(2800px) scale(0.4);
+        }
+        75% {
+            opacity: 0.8;
+        }
+        100% {
+            opacity: 0.1;
+            transform: translateY(0px) scale(1.7);
+        }
     }
-  }
-}
 }
 
+}
 
 // .header.sub-header .logo .logo-img {
 //   background-image: url(/dist/assets/img/logo.svg)
