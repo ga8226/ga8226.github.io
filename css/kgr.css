@@ -16,6 +16,10 @@ ul, li {
   font-weight: 600;
 }
 
+.ft20 {
+  font-size: 20px;
+}
+
 #kimgarim {
   font-family: "LeeSeoyun";
 }
@@ -87,6 +91,7 @@ ul, li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  background-color: transparent;
 }
 #kimgarim #portfoliointro div.back2 {
   width: 951px;
@@ -95,6 +100,7 @@ ul, li {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  background-color: transparent;
 }
 #kimgarim #portfoliointro .circle {
   display: flex;
@@ -110,6 +116,128 @@ ul, li {
 #kimgarim #portfoliointro button.ptB a {
   text-decoration: none;
   color: black;
+  font-size: 1.5rem;
+}
+#kimgarim #mainskill li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+#kimgarim #mainskill li div.skillname {
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  font-size: 22px;
+  font-weight: 600;
+  justify-content: center;
+  width: 180px;
+}
+#kimgarim #mainskill li div.ability-bar {
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 32px;
+  justify-content: center;
+  padding: 0 1px;
+  width: 920px;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML {
+  width: 80%;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML div.ability-percent {
+  align-items: center;
+  animation: SkillUp 3s linear;
+  background: linear-gradient(90deg, #dbcfff, #dca3ff);
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML div.ability-percent span.percent {
+  color: #fff;
+  font-size: 18px;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML7 {
+  width: 70%;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML7 div.ability-percent {
+  align-items: center;
+  animation: SkillUp 3s linear;
+  background: linear-gradient(90deg, rgba(219, 207, 255, 0.768627451), #dca3ff);
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML7 div.ability-percent span.percent {
+  color: #fff;
+  font-size: 18px;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML6 {
+  width: 65%;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML6 div.ability-percent {
+  align-items: center;
+  animation: SkillUp 3s linear;
+  background: linear-gradient(90deg, rgba(219, 207, 255, 0.768627451), #dca3ff);
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML6 div.ability-percent span.percent {
+  color: #fff;
+  font-size: 18px;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML4 {
+  width: 40%;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML4 div.ability-percent {
+  align-items: center;
+  animation: SkillUp 3s linear;
+  background: linear-gradient(90deg, rgba(219, 207, 255, 0.768627451), #dca3ff);
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML4 div.ability-percent span.percent {
+  color: #fff;
+  font-size: 18px;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML3 {
+  width: 30%;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML3 div.ability-percent {
+  align-items: center;
+  animation: SkillUp 3s linear;
+  background: linear-gradient(90deg, rgba(219, 207, 255, 0.768627451), #dca3ff);
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML3 div.ability-percent span.percent {
+  color: #fff;
+  font-size: 18px;
+}
+@keyframes SkillUp {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 #kimgarim footer h2 {
   line-height: 1.5;
