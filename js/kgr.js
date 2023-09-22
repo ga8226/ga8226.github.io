@@ -1,12 +1,34 @@
-// const content = "안녕하세요 : ) \n 주니어 front-end 개발자 김가림입니다!";
-// const text = document.querySelector(".text");
-// let i = 0;
-// function typing(){
-//     let txt = content[i++];
-//     text.innerHTML += txt=== "\n" ? "<br/>": txt;
-//     if (i > content.length) {
-//         text.textContent = "";
-//         i = 0;
-//     }
-// }
-// setInterval(typing, 200)
+
+window.onload = function(){
+    var mainSkill = document.querySelector("#mainskill").offsetTop;
+    const anibars = document.querySelectorAll(".ability-percent");
+
+    window.addEventListener('resize', ()=>{
+
+        mainSkill = document.querySelector("#mainskill").offsetTop;
+    
+    })
+    
+    
+    window.addEventListener('scroll', () => {
+    
+        
+    
+        const scrollPosition = window.scrollY;
+    
+       
+    
+       
+        if (scrollPosition > ( mainSkill - 500 ) ) {
+            anibars.forEach((ele, idx)=>{
+                ele.classList.add("action");
+           })
+        } 
+    
+        
+        
+    });
+}
+
+
+

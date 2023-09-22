@@ -118,6 +118,10 @@ ul, li {
   color: black;
   font-size: 1.5rem;
 }
+#kimgarim #portfoliointro div.static {
+  position: static;
+  background-color: transparent;
+}
 #kimgarim #mainskill li {
   display: flex;
   justify-content: space-between;
@@ -143,12 +147,10 @@ ul, li {
   padding: 0 1px;
   width: 920px;
 }
-#kimgarim #mainskill li div.ability-bar div.jdQiML {
-  width: 80%;
-}
-#kimgarim #mainskill li div.ability-bar div.jdQiML div.ability-percent {
+#kimgarim #mainskill li div.ability-bar div.ability-percent {
   align-items: center;
-  animation: SkillUp 3s linear;
+  animation-duration: 3s;
+  animation-timing-function: linear;
   background: linear-gradient(90deg, #dbcfff, #dca3ff);
   border-radius: 0 15px 15px 0;
   display: flex;
@@ -156,146 +158,84 @@ ul, li {
   justify-content: flex-end;
   padding: 0 20px;
 }
-#kimgarim #mainskill li div.ability-bar div.jdQiML div.ability-percent span.percent {
+#kimgarim #mainskill li div.ability-bar div.ability-percent span.percent {
   color: #fff;
   font-size: 18px;
+}
+#kimgarim #mainskill li div.ability-bar div.jdQiML {
+  width: 80%;
 }
 #kimgarim #mainskill li div.ability-bar div.jdQiML7 {
   width: 70%;
 }
-#kimgarim #mainskill li div.ability-bar div.jdQiML7 div.ability-percent {
-  align-items: center;
-  animation: SkillUp 3s linear;
-  background: linear-gradient(90deg, rgba(219, 207, 255, 0.768627451), #dca3ff);
-  border-radius: 0 15px 15px 0;
-  display: flex;
-  height: 30px;
-  justify-content: flex-end;
-  padding: 0 20px;
-}
-#kimgarim #mainskill li div.ability-bar div.jdQiML7 div.ability-percent span.percent {
-  color: #fff;
-  font-size: 18px;
-}
 #kimgarim #mainskill li div.ability-bar div.jdQiML6 {
   width: 65%;
-}
-#kimgarim #mainskill li div.ability-bar div.jdQiML6 div.ability-percent {
-  align-items: center;
-  animation: SkillUp 3s linear;
-  background: linear-gradient(90deg, rgba(219, 207, 255, 0.768627451), #dca3ff);
-  border-radius: 0 15px 15px 0;
-  display: flex;
-  height: 30px;
-  justify-content: flex-end;
-  padding: 0 20px;
-}
-#kimgarim #mainskill li div.ability-bar div.jdQiML6 div.ability-percent span.percent {
-  color: #fff;
-  font-size: 18px;
 }
 #kimgarim #mainskill li div.ability-bar div.jdQiML4 {
   width: 40%;
 }
-#kimgarim #mainskill li div.ability-bar div.jdQiML4 div.ability-percent {
-  align-items: center;
-  animation: SkillUp 3s linear;
-  background: linear-gradient(90deg, rgba(219, 207, 255, 0.768627451), #dca3ff);
-  border-radius: 0 15px 15px 0;
-  display: flex;
-  height: 30px;
-  justify-content: flex-end;
-  padding: 0 20px;
-}
-#kimgarim #mainskill li div.ability-bar div.jdQiML4 div.ability-percent span.percent {
-  color: #fff;
-  font-size: 18px;
-}
 #kimgarim #mainskill li div.ability-bar div.jdQiML3 {
   width: 30%;
 }
-#kimgarim #mainskill li div.ability-bar div.jdQiML3 div.ability-percent {
-  align-items: center;
-  animation: SkillUp 3s linear;
-  background: linear-gradient(90deg, rgba(219, 207, 255, 0.768627451), #dca3ff);
-  border-radius: 0 15px 15px 0;
-  display: flex;
-  height: 30px;
-  justify-content: flex-end;
-  padding: 0 20px;
-}
-#kimgarim #mainskill li div.ability-bar div.jdQiML3 div.ability-percent span.percent {
-  color: #fff;
-  font-size: 18px;
-}
-@keyframes SkillUp {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 50%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-#kimgarim footer h2 {
+
+footer h2 {
   line-height: 1.5;
 }
-#kimgarim footer p {
+footer p {
   font-size: 1.3rem;
 }
-#kimgarim footer button.ftB {
+footer button.ftB {
   border: none;
   background-color: transparent;
 }
-#kimgarim footer button.ftB a {
+footer button.ftB a {
   text-decoration: none;
   color: black;
   font-size: 1.3rem;
 }
-#kimgarim .bubbles {
+
+.bubbles {
   position: absolute;
   top: 0;
   z-index: -9999;
   display: flex;
   justify-content: space-around;
 }
-#kimgarim .bubbles span {
+.bubbles span {
   overflow: hidden;
   width: 7vw;
   height: 7vw;
   border-radius: 50%;
   animation: bubbelUp 15s linear infinite;
 }
-#kimgarim .bubbles span.purple {
+.bubbles span.purple {
   background-color: #D9D7F1;
 }
-#kimgarim .bubbles span.yellow {
+.bubbles span.yellow {
   background-color: #FFFDDE;
 }
-#kimgarim .bubbles span.green {
+.bubbles span.green {
   background-color: #E7FBBE;
 }
-#kimgarim .bubbles span.pink {
+.bubbles span.pink {
   background-color: #FFCBCB;
 }
-#kimgarim .bubbles span.blue {
+.bubbles span.blue {
   background-color: #D6E5FA;
 }
-#kimgarim .bubbles span.b1 {
+.bubbles span.b1 {
   animation-duration: 30s;
 }
-#kimgarim .bubbles span.b2 {
+.bubbles span.b2 {
   animation-duration: 20s;
 }
-#kimgarim .bubbles span.b3 {
+.bubbles span.b3 {
   animation-duration: 10s;
 }
-#kimgarim .bubbles span.b4 {
+.bubbles span.b4 {
   animation-duration: 7.5s;
 }
-#kimgarim .bubbles span.b5 {
+.bubbles span.b5 {
   animation-duration: 8s;
 }
 @keyframes bubbelUp {
@@ -309,5 +249,21 @@ ul, li {
   100% {
     opacity: 0.1;
     transform: translateY(0px) scale(1.7);
+  }
+}
+
+.action {
+  animation-name: SkillUp;
+}
+
+@keyframes SkillUp {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 80%;
   }
 }/*# sourceMappingURL=kgr.css.map */
